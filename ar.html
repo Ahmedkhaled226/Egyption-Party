@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>حفلة مصرية</title>
+    <link rel="icon" href="css/photos/party-popper-icon-free-png.webp.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/ar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        body[data-theme='dark'] {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Add any additional RTL specific CSS rules here */
+        body[dir='rtl'] .choose-background img {
+            border: 2px solid #fff;
+        }
+
+        body[dir='rtl'] .background-option button.Yes {
+            background-color: #4CAF50;
+        }
+
+        body[dir='rtl'] .background-option button.No {
+            background-color: #FF5722;
+        }
+
+        body[dir='rtl'] .colors-option li {
+            border: 1px solid #fff;
+        }
+
+        /* Additional RTL specific CSS rules */
+        /* For example: */
+        body[dir='rtl'] .sidenav,
+        body[dir='rtl'] .sideRight {
+            right: 0;
+            left: unset;
+        }
+
+        body[dir='rtl'] .openNav {
+            float: left;
+        }
+
+        body[dir='rtl'] #home-content {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="loading" id="loading">
+        <span class="loader"></span>
+    </div>
+    <a href="#" class="scroll-to-top"><i class="fa-solid fa-arrow-up " aria-hidden="true"></i></a>
+    <section>
+        <div id="home">
+            <div class="HomeOverlay">
+                <div id="language-toggle">
+                    <mat-button-toggle-group appearance="outline" name="fontStyle" aria-label="Font Style" class="arabic">
+                      <mat-button-toggle value="ar">
+                        <span class="mat-button-toggle-label-content">
+                          <i class="fas fa-globe"></i> العربية
+                        </span>
+                      </mat-button-toggle>
+                      <mat-button-toggle value="en">
+                        <span class="mat-button-toggle-label-content">
+                          <i class="fas fa-globe"></i> English
+                        </span>
+                      </mat-button-toggle>
+                    </mat-button-toggle-group>
+                  </div>
+                <div id="leftMenu" class="sidenav">
+                    <p href="#" class="closebtn" data-ur1313m3t="true">×</p>
+                    <a href="#home" data-ur1313m3t="true">الرئيسية</a>
+                    <a href="#sliderDown" data-ur1313m3t="true">المدة</a>
+                    <a href="#count" data-ur1313m3t="true">التفاصيل</a>
+                    <a href="#contact-us" data-ur1313m3t="true">اتصل بنا</a>
+                </div>
+
+                <div id="home-content" class="position-relative">
+                    <h2>حفلة مصرية</h2>
+                    <p>دعونا نستمتع</p>
+                    <span style="cursor:pointer"><i class="icon-toggle  icon fas fa-gear fa-spin"></i></span>
+
+                    <span style="font-size:30px;cursor:pointer" class="openNav float-end">☰ فتح</span>
+               
+                </div>
+
+                <div id="rightMenu" class="sideRight" style="left: 0;">
+                    <a href="#" class=" closebtn1" data-ur1313m3t="true">×</a>
+                    <h3 class="text-center">اختر خلفية</h3>
+                    <div class="choose-background text-center">
+                        <img src="css/photos/thumbnail.jpg" alt="background photo" class="w-25 my-3">
+                        <img src="css/photos/1.jpg" alt="background photo" class="w-25 my-3">
+                        <img src="css/photos/2.jpg" alt="background photo" class="w-25 my-3">
+                        <img src="css/photos/3.jpg" alt="background photo" class="w-25 my-3">
+                        <img src="css/photos/4.jpg" alt="background photo" class="w-25 my-3">
+                        <img src="css/photos/5.jpg" alt="background photo" class="w-25 my-3">
+                    </div>
+                    <h3 class="text-center">خلفية عشوائية</h3>
+                    <div class="background-option op-y-n text-center">
+                        <button id="toggleRandomYes" class="Yes active  btn btn-primary">نعم</button>
+                        <button id="toggleRandomNo" class="No  btn btn-danger">لا</button>
+                    </div>
+                    <hr>
+                    <div class="option p-2 text-center">
+                        <h3>الألوان</h3>
+                        <ul class="colors-option text-center">
+                            <li data-color="#fff" style="background-color: #fff;"></li>
+                            <li data-color="#000" style="background-color: #000;"></li>
+                            <li data-color="#ff9800" style="background-color: #ff9800;"></li>
+                            <li data-color="#f44336" style="background-color: #f44336;"></li>
+                            <li data-color="#e91e63" style="background-color: #e91e63;"></li>
+                            <li data-color="#9c27b0" style="background-color: #9c27b0;"></li>
+                            <li data-color="#673ab7" style="background-color: #673ab7;"></li>
+                            <li data-color="#2196f3" style="background-color: #2196f3;" class="active"></li>
+                            <li data-color="#03a9f4" style="background-color: #03a9f4;"></li>
+                            <li data-color="#00bcd4" style="background-color: #00bcd4;"></li>
+                            <li data-color="#009688" style="background-color: #009688;"></li>
+                            <li data-color="#4caf50" style="background-color: #4caf50;"></li>
+                            <li data-color="#8bc34a" style="background-color: #8bc34a;"></li>
+                            <li data-color="#ffc107" style="background-color: #ffc107;"></li>
+                            <li data-color="#ff5722" style="background-color: #ff5722;"></li>
+                            <li data-color="#795548" style="background-color: #795548;"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sliderDown">
+        <h3 class="toggle  "> <i class="fas fa-microphone-alt"></i> عمرو دياب </h3>
+        <div class="inner first">"عمرو عبد الباسط عبد العزيز دياب (مواليد 11 أكتوبر 1961)، والمعروف باسمه الفني عمرو
+            دياب، ولقبه الهضبة، هو مغني، وملحن، وممثل مصري. يُعد واحدًا من أشهر المغنيين في الوطن العربي، حيث حققت
+            ألبوماته مبيعات هائلة، وتُرجمت العديد من أغانيه إلى عدة لغات أهمها: اللغة الإنجليزية، واللغة الروسية، واللغة
+            الكرواتية، واللغة البلغارية، واللغة التركية، واللغة الألبانية، واللغة الهندية، واللغة اليونانية، واللغة
+            الفرنسية. تميٌز عمرو دياب بإدخاله آلات جديدة في موسيقاه، وابتكار أنواع مختلفة من الأغاني عبر تاريخه."
+        </div>
+        <h3 class="toggle "> <i class="fas fa-microphone-alt"></i> حماقي</h3>
+        <div class="inner  "> "محمد إبراهيم محمد الحماقي (مواليد 4 نوفمبر 1975 –)، والمعروف باسمه الفني محمد حماقي، وهو
+            مغني مصري، وأحد المغنيين على الساحة الغنائية العربية. وهو أول فنان مصري يمثل أحد أعضاء لجنة تحكيم ذا فويس:
+            أحلى صوت بنسخته العربية في الموسم الرابع والخامس، والذي عُرض على قنوات إم بي سي. وهو أيضا عضو في لجنه تحكيم
+            ذا فويس كيدز: أحلى صوت في موسمه الثالث، والذي عُرض أيضا على قنوات إم بي سي."
+        </div>
+        <h3 class="toggle"> <i class="fas fa-microphone-alt"></i> تامر عاشور</h3>
+        <div class="inner  "> "تامر عاشور (مواليد يوم 2 يناير عام 1984) هو مطرب، وملحن، وكاتب أغاني مصرى. ولد في دمياط.
+            قام بإصدار أكثر من 15 أغنية من 2004 حتى 2008، ومن أشهر هذه الأغاني: «تسلم»، و«افترقنا»، و«كل يوم»، و«مبقاش»،
+            و«نفسى اقولك»، و«أنت اخترت»، و«في ليالي عذابي معاك»، وغيرها من الأغاني التي كانت السبب الرئيسي في شهرة تامر،
+            وجعلته من أهم المطربين الصاعدين في ذلك الوقت، ومن النجوم الذين سيصبح لهم اسم كبير في عالم الغناء في
+            المستقبل."
+        </div>
+        <h3 class="toggle"> <i class="fas fa-microphone-alt"></i> حمزة نمرة</h3>
+        <div class="inner  "> "حمزة نمرة مؤلف موسيقي ومغنٍ، وعازف جيتار مصري، من مواليد 15 نوفمبر 1980 مهتم بالثقافة
+            العربية الأصيلة محاولًا تجسيد العلاقات الاجتماعية والإنسانية من خلال أغانيه. أصدر حمزة نمرة أربع البومات من
+            إنتاج شركة تسجيلات أوايكننغ: «احلم معايا» و«انسان» و«اسمعني» و«هطير من تاني»، في مارس 2018 أصدر ألبومه
+            الرابع «هطير من تاني» من إنتاجه الخاص، وفي عام 2020 أصدر ألبوم بعنوان (مولود سنة 80) من إجمالي 6 ألبومات
+            موسيقية حتى الآن."
+        </div>
+    </section>
+    <section id="count">
+        <div class="count-overlay">
+            <div class="container text-center countdown-container">
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <div class="tim">
+                            <span class="days"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="tim">
+                            <span class="hours"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="tim">
+                            <span class="minutes"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="tim">
+                            <span class="seconds"></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-us">
+        <form action="" method="POST" id="form" class="form-data">
+            <h3>اتصل بنا</h3>
+            <label for="full-name">الاسم الكامل:</label>
+            <input type="text" id="full-name" class="full-name" placeholder="الاسم الكامل ..." required>
+            <label for="Email">البريد الإلكتروني:</label>
+            <input type="email" id="email" class="Email" placeholder="البريد الإلكتروني ..." required>
+            <label for="message">الرسالة:</label>
+            <textarea id="message" class="message" placeholder="الرسالة ..." required></textarea>
+            <button type="submit" class="submit">إرسال</button>
+        </form>
+    </section>
+    <footer id="footer">
+        <div class="last">
+            <h3>الاحتفال</h3>
+            <p>هو تجمع لعدة من الأشخاص بهدف إحياء ذكرى اجتماعية أو ثقافية أو دينية أو فصلية وهي تعبر عن أواصر العلاقة
+                الموجودة بين الأفراد المجتمعين.</p>
+        </div>
+    </footer>
+
+    <div class='cursor' id="cursor"></div>
+    <div class='cursor2' id="cursor2"></div>
+    <div class='cursor3' id="cursor3"></div>
+
+
+
+    <!--! ============  jquery File ============ -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!--! ============ BootStrap JS File ============ -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--! ============ Main Js File ============ -->
+    <script src="js/main.js"></script>
+    <script src="js/ar.js"></script>
+
+
+</body>
+
+</html>
