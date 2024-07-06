@@ -524,6 +524,11 @@ p {
     .social-list {
         text-align: center;
     }
+      #language-toggle {
+        position: absolute;
+        bottom: 30px;
+        right: 42%;
+    }
 
 }
 
@@ -539,6 +544,11 @@ p {
 
     .social-list {
         text-align: center;
+    }
+     #language-toggle {
+        position: absolute;
+        bottom: 30px;
+        right: 42%;
     }
 
 }
@@ -564,5 +574,10 @@ p {
     .social-list {
         text-align: center;
         padding-bottom: 35px;
+    }
+    #language-toggle {
+        position: absolute;
+        bottom: 30px;
+        right: 30%;
     }
 }
